@@ -11,6 +11,7 @@ export const checkApiPerformance = async (url: string, method: string = "GET") =
       method,
       statusCode: response.status,
       responseTime,
+      timestamp : startTime
     });
 
     return { url, responseTime, status: response.status };

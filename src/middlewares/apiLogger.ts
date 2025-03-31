@@ -10,7 +10,8 @@ export async function apiLogger(req: Request, res: Response, next: NextFunction)
       url: req.originalUrl,
       method: req.method,
       statusCode: res.statusCode,
-      responseTime
+      responseTime,
+      timestamp : Date.now()
     });
   });
 

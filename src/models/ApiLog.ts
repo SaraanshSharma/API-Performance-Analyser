@@ -6,10 +6,11 @@ const ApiLogSchema = new mongoose.Schema(
     method: String,
     statusCode: Number,
     responseTime: Number,
+    timestamp : Date
   },
   {
     collection: "ApiLog",
-    timestamps: true,
+    timestamps: false,
   }
 );
 
